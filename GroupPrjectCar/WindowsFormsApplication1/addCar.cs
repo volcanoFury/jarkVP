@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class addCar : Form
+    public partial class frmAddCar : Form
     {
         int year = 0;
 
-        public addCar()
+        public frmAddCar()
         {
             InitializeComponent();
         }

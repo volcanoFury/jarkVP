@@ -51,19 +51,37 @@
       <DependentUpon>addCar.cs</DependentUpon>
     </Compile>
     <Compile Include="Car.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateDelete.Designer.cs">
+      <DependentUpon>frmUpdateDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="addCar.resx">
       <DependentUpon>addCar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateDelete.resx">
+      <DependentUpon>frmUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,6 +105,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Apps-Help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Contacts-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Documents-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Folder-Links-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

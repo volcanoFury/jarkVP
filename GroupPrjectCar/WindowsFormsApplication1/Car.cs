@@ -8,7 +8,6 @@ namespace WindowsFormsApplication1
 {
     class Car
     {
-        private int carID;
         private int year;
         private int miles;
         private string brand;
@@ -19,12 +18,6 @@ namespace WindowsFormsApplication1
         private DateTime carAdded;
         private DateTime carLastEdited;
         private byte[] carImage;
-
-        public int CarID
-        {
-            get { return carID; }
-            set { carID = value; }
-        }
 
         public int Year
         {
