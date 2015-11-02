@@ -9,12 +9,6 @@ namespace WindowsFormsApplication1
     class Car
     {
         private int carID;
-
-        public int CarID
-        {
-            get { return carID; }
-            set { carID = value; }
-        }
         private int year;
         private int miles;
         private string brand;
@@ -22,7 +16,61 @@ namespace WindowsFormsApplication1
         private string bodyType;
         private string gearBox;
         private string inforamtion;
-        private DateTime carAdded; 
-        private DateTime carLasrEdited;
+        private DateTime carAdded;
+        private DateTime carLastEdited;
+
+        public int CarID
+        {
+            get { return carID; }
+            set { carID = value; }
+        }
+
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        }
+
+        public string Brand
+        {
+            get { return brand; }
+            set { brand = value; }
+        }
+
+        public string Model
+        {
+            get { return model; }
+            set { model = value; }
+        }
+
+        public string BodyType
+        {
+            get { return bodyType; }
+            set { bodyType = value; }
+        }
+
+        public string GearBox
+        {
+            get { return gearBox; }
+            set { gearBox = value; }
+        }
+
+        public string Inforamtion
+        {
+            get { return inforamtion; }
+            set { inforamtion = value; }
+        }
+
+        public DateTime CarAdded
+        {
+            get { return carAdded; }
+            set { carAdded = value; }
+        }
+
+        public DateTime CarLastEdited
+        {
+            get { return carLastEdited; }
+            set { carLastEdited = value; }
+        }
     }
 }
