@@ -18,6 +18,7 @@ namespace WindowsFormsApplication1
         private string inforamtion;
         private DateTime carAdded;
         private DateTime carLastEdited;
+        private byte[] carImage;
 
         public int CarID
         {
@@ -71,6 +72,12 @@ namespace WindowsFormsApplication1
         {
             get { return carLastEdited; }
             set { carLastEdited = value; }
+        }
+
+        public byte[] CarImage
+        {
+            get { return carImage; }
+            set { carImage = value; }
         }
     }
 }
