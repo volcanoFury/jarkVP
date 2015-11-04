@@ -32,14 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Power = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbAuto = new System.Windows.Forms.RadioButton();
             this.rbManual = new System.Windows.Forms.RadioButton();
@@ -90,14 +82,19 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.abouToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.carImage = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.lsInformation = new System.Windows.Forms.ListView();
+            this.btnInformationAdd = new System.Windows.Forms.Button();
+            this.txtInfoAdd = new System.Windows.Forms.TextBox();
+            this.btnClearInformation = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox5
@@ -105,7 +102,7 @@
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(250, 357);
+            this.groupBox5.Location = new System.Drawing.Point(251, 379);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(315, 68);
             this.groupBox5.TabIndex = 15;
@@ -134,85 +131,17 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox3);
-            this.groupBox4.Controls.Add(this.textBox6);
-            this.groupBox4.Controls.Add(this.Power);
-            this.groupBox4.Controls.Add(this.textBox5);
-            this.groupBox4.Controls.Add(this.textBox7);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.btnClearInformation);
+            this.groupBox4.Controls.Add(this.txtInfoAdd);
+            this.groupBox4.Controls.Add(this.btnInformationAdd);
+            this.groupBox4.Controls.Add(this.lsInformation);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(250, 193);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(316, 158);
+            this.groupBox4.Size = new System.Drawing.Size(316, 180);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Inforation";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(86, 111);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(86, 55);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 16;
-            // 
-            // Power
-            // 
-            this.Power.AutoSize = true;
-            this.Power.Location = new System.Drawing.Point(10, 27);
-            this.Power.Name = "Power";
-            this.Power.Size = new System.Drawing.Size(51, 16);
-            this.Power.TabIndex = 10;
-            this.Power.Text = "Power";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(86, 83);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 17;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(86, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 11;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 55);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 16);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Avg MPG";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 111);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 16);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Miles";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 16);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Doors";
             // 
             // groupBox3
             // 
@@ -507,6 +436,7 @@
             this.btnBrowse.TabIndex = 20;
             this.btnBrowse.Text = "Browse Image";
             this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // menuStrip1
             // 
@@ -576,6 +506,7 @@
             // 
             // addNewCarToolStripMenuItem
             // 
+            this.addNewCarToolStripMenuItem.Enabled = false;
             this.addNewCarToolStripMenuItem.Name = "addNewCarToolStripMenuItem";
             this.addNewCarToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.addNewCarToolStripMenuItem.Text = "Add New Car";
@@ -585,6 +516,7 @@
             this.updateDeleteNewCarToolStripMenuItem.Name = "updateDeleteNewCarToolStripMenuItem";
             this.updateDeleteNewCarToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.updateDeleteNewCarToolStripMenuItem.Text = "Update/Delete New Car";
+            this.updateDeleteNewCarToolStripMenuItem.Click += new System.EventHandler(this.updateDeleteNewCarToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
@@ -687,13 +619,60 @@
             this.abouToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.abouToolStripMenuItem.Text = "About";
             // 
-            // pictureBox1
+            // carImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(11, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(222, 183);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.carImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.carImage.Location = new System.Drawing.Point(11, 43);
+            this.carImage.Name = "carImage";
+            this.carImage.Size = new System.Drawing.Size(222, 183);
+            this.carImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.carImage.TabIndex = 8;
+            this.carImage.TabStop = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // lsInformation
+            // 
+            this.lsInformation.Location = new System.Drawing.Point(13, 19);
+            this.lsInformation.Name = "lsInformation";
+            this.lsInformation.Size = new System.Drawing.Size(297, 97);
+            this.lsInformation.TabIndex = 0;
+            this.lsInformation.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnInformationAdd
+            // 
+            this.btnInformationAdd.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnInformationAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInformationAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformationAdd.ForeColor = System.Drawing.Color.White;
+            this.btnInformationAdd.Location = new System.Drawing.Point(181, 122);
+            this.btnInformationAdd.Name = "btnInformationAdd";
+            this.btnInformationAdd.Size = new System.Drawing.Size(129, 23);
+            this.btnInformationAdd.TabIndex = 22;
+            this.btnInformationAdd.Text = "Add Information";
+            this.btnInformationAdd.UseVisualStyleBackColor = false;
+            // 
+            // txtInfoAdd
+            // 
+            this.txtInfoAdd.Location = new System.Drawing.Point(13, 123);
+            this.txtInfoAdd.Name = "txtInfoAdd";
+            this.txtInfoAdd.Size = new System.Drawing.Size(162, 22);
+            this.txtInfoAdd.TabIndex = 10;
+            // 
+            // btnClearInformation
+            // 
+            this.btnClearInformation.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnClearInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClearInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearInformation.ForeColor = System.Drawing.Color.White;
+            this.btnClearInformation.Location = new System.Drawing.Point(181, 151);
+            this.btnClearInformation.Name = "btnClearInformation";
+            this.btnClearInformation.Size = new System.Drawing.Size(129, 23);
+            this.btnClearInformation.TabIndex = 23;
+            this.btnClearInformation.Text = "Clear Information";
+            this.btnClearInformation.UseVisualStyleBackColor = false;
             // 
             // frmAddCar
             // 
@@ -713,7 +692,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.carImage);
             this.Name = "frmAddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Manager - Add Car";
@@ -729,7 +708,7 @@
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -744,7 +723,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox carImage;
         private System.Windows.Forms.RadioButton rbManual;
         private System.Windows.Forms.RadioButton rbAuto;
         private System.Windows.Forms.Label label4;
@@ -754,14 +733,6 @@
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label Power;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtYear;
@@ -800,5 +771,10 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem abouToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btnClearInformation;
+        private System.Windows.Forms.TextBox txtInfoAdd;
+        private System.Windows.Forms.Button btnInformationAdd;
+        private System.Windows.Forms.ListView lsInformation;
     }
 }

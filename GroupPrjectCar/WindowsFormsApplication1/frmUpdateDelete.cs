@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,19 +18,28 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dlg = new OpenFileDialog();
-
-            dlg.Title = "Open Image";
-            dlg.Filter = "bmp files (*.bmp)|*.bmp";
-
-            if (dlg.ShowDialog() == DialogResult.OK)
+            String filename = "", filepath;
+            OpenFileDialog open = new OpenFileDialog() { Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg" };
+            if (open.ShowDialog() == DialogResult.OK)
             {
-                //pbImage.Image(dlg.FileName);
+                filename =open.FileName;
             }
 
-            dlg.Dispose();
+            Bitmap bmp = new Bitmap(filename);
+            carImage.Image = bmp;//add this line
+            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read);
+            byte[] bimage = new byte[fs.Length];
+            fs.Read(bimage, 0, Convert.ToInt32(fs.Length));
+            filepath = Path.GetDirectoryName(filename);
+            fs.Close();
+        }
+
+        private void addNewCarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddCar add = new frmAddCar();
+            add.Show();
         }
     }
 }
