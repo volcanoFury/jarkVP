@@ -32,6 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnClearInformation = new System.Windows.Forms.Button();
+            this.txtInfoAdd = new System.Windows.Forms.TextBox();
+            this.btnInformationAdd = new System.Windows.Forms.Button();
+            this.lsInformation = new System.Windows.Forms.ListView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbAuto = new System.Windows.Forms.RadioButton();
             this.rbManual = new System.Windows.Forms.RadioButton();
@@ -44,8 +48,8 @@
             this.rdHatchBack = new System.Windows.Forms.RadioButton();
             this.rdSaloon = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMiles = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -84,10 +88,7 @@
             this.abouToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carImage = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lsInformation = new System.Windows.Forms.ListView();
-            this.btnInformationAdd = new System.Windows.Forms.Button();
-            this.txtInfoAdd = new System.Windows.Forms.TextBox();
-            this.btnClearInformation = new System.Windows.Forms.Button();
+            this.lblMultidate = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.lblMultidate);
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,6 +144,47 @@
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Inforation";
+            // 
+            // btnClearInformation
+            // 
+            this.btnClearInformation.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnClearInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClearInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearInformation.ForeColor = System.Drawing.Color.White;
+            this.btnClearInformation.Location = new System.Drawing.Point(181, 151);
+            this.btnClearInformation.Name = "btnClearInformation";
+            this.btnClearInformation.Size = new System.Drawing.Size(129, 23);
+            this.btnClearInformation.TabIndex = 23;
+            this.btnClearInformation.Text = "Clear Information";
+            this.btnClearInformation.UseVisualStyleBackColor = false;
+            // 
+            // txtInfoAdd
+            // 
+            this.txtInfoAdd.Location = new System.Drawing.Point(13, 123);
+            this.txtInfoAdd.Name = "txtInfoAdd";
+            this.txtInfoAdd.Size = new System.Drawing.Size(162, 22);
+            this.txtInfoAdd.TabIndex = 10;
+            // 
+            // btnInformationAdd
+            // 
+            this.btnInformationAdd.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnInformationAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInformationAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformationAdd.ForeColor = System.Drawing.Color.White;
+            this.btnInformationAdd.Location = new System.Drawing.Point(181, 122);
+            this.btnInformationAdd.Name = "btnInformationAdd";
+            this.btnInformationAdd.Size = new System.Drawing.Size(129, 23);
+            this.btnInformationAdd.TabIndex = 22;
+            this.btnInformationAdd.Text = "Add Information";
+            this.btnInformationAdd.UseVisualStyleBackColor = false;
+            // 
+            // lsInformation
+            // 
+            this.lsInformation.Location = new System.Drawing.Point(13, 19);
+            this.lsInformation.Name = "lsInformation";
+            this.lsInformation.Size = new System.Drawing.Size(297, 97);
+            this.lsInformation.TabIndex = 0;
+            this.lsInformation.UseCompatibleStateImageBehavior = false;
             // 
             // groupBox3
             // 
@@ -273,8 +316,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtMiles);
+            this.groupBox1.Controls.Add(this.txtPrice);
             this.groupBox1.Controls.Add(this.txtYear);
             this.groupBox1.Controls.Add(this.txtModel);
             this.groupBox1.Controls.Add(this.label6);
@@ -291,19 +334,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Characreristics";
             // 
-            // textBox2
+            // txtMiles
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 9;
+            this.txtMiles.Location = new System.Drawing.Point(86, 106);
+            this.txtMiles.Name = "txtMiles";
+            this.txtMiles.Size = new System.Drawing.Size(100, 22);
+            this.txtMiles.TabIndex = 9;
             // 
-            // textBox1
+            // txtPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtPrice.Location = new System.Drawing.Point(222, 76);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(75, 22);
+            this.txtPrice.TabIndex = 8;
             // 
             // txtYear
             // 
@@ -633,46 +676,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // lsInformation
+            // lblMultidate
             // 
-            this.lsInformation.Location = new System.Drawing.Point(13, 19);
-            this.lsInformation.Name = "lsInformation";
-            this.lsInformation.Size = new System.Drawing.Size(297, 97);
-            this.lsInformation.TabIndex = 0;
-            this.lsInformation.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnInformationAdd
-            // 
-            this.btnInformationAdd.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnInformationAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInformationAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformationAdd.ForeColor = System.Drawing.Color.White;
-            this.btnInformationAdd.Location = new System.Drawing.Point(181, 122);
-            this.btnInformationAdd.Name = "btnInformationAdd";
-            this.btnInformationAdd.Size = new System.Drawing.Size(129, 23);
-            this.btnInformationAdd.TabIndex = 22;
-            this.btnInformationAdd.Text = "Add Information";
-            this.btnInformationAdd.UseVisualStyleBackColor = false;
-            // 
-            // txtInfoAdd
-            // 
-            this.txtInfoAdd.Location = new System.Drawing.Point(13, 123);
-            this.txtInfoAdd.Name = "txtInfoAdd";
-            this.txtInfoAdd.Size = new System.Drawing.Size(162, 22);
-            this.txtInfoAdd.TabIndex = 10;
-            // 
-            // btnClearInformation
-            // 
-            this.btnClearInformation.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnClearInformation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClearInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearInformation.ForeColor = System.Drawing.Color.White;
-            this.btnClearInformation.Location = new System.Drawing.Point(181, 151);
-            this.btnClearInformation.Name = "btnClearInformation";
-            this.btnClearInformation.Size = new System.Drawing.Size(129, 23);
-            this.btnClearInformation.TabIndex = 23;
-            this.btnClearInformation.Text = "Clear Information";
-            this.btnClearInformation.UseVisualStyleBackColor = false;
+            this.lblMultidate.AutoSize = true;
+            this.lblMultidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMultidate.Location = new System.Drawing.Point(115, 18);
+            this.lblMultidate.Name = "lblMultidate";
+            this.lblMultidate.Size = new System.Drawing.Size(91, 13);
+            this.lblMultidate.TabIndex = 3;
+            this.lblMultidate.Text = "this is date Saved";
             // 
             // frmAddCar
             // 
@@ -733,8 +745,8 @@
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMiles;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RadioButton rdEstate;
@@ -776,5 +788,6 @@
         private System.Windows.Forms.TextBox txtInfoAdd;
         private System.Windows.Forms.Button btnInformationAdd;
         private System.Windows.Forms.ListView lsInformation;
+        private System.Windows.Forms.Label lblMultidate;
     }
 }
