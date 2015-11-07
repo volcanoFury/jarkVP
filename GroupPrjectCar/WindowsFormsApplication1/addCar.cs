@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         int year = 0;
         double price = 0, miles = 0;
         DateTime currentDate = DateTime.Today;
-        String brand, model;
+        String brand, model , addInfo;
 
         public frmAddCar()
         {
@@ -99,5 +99,27 @@ namespace WindowsFormsApplication1
             frmUpdateDelete ud = new frmUpdateDelete();
             ud.Show();
         }
+
+        private void btnInformationAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                addInfo = txtInfoAdd.Text;
+            }
+            catch (FormatException fe)
+            {
+                MessageBox.Show("Aditional needs and Filled in" + "\n");
+            }
+
+            lsInformation.Items.Add(addInfo);
+
+            txtInfoAdd.Clear();
+        }
+
+        private void btnClearInformation_Click(object sender, EventArgs e)
+        {
+            lsInformation.Clear();
+        }
+
     }
 }
