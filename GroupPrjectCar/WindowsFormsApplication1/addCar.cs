@@ -106,7 +106,7 @@ namespace WindowsFormsApplication1
 
         private void updateDeleteNewCarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmUpdateDelete ud = new frmUpdateDelete();
+            frmUpdateDelete ud = new frmUpdateDelete(addDatebase);
             ud.Show();
         }
 

@@ -675,6 +675,7 @@
             this.lsInformation.Size = new System.Drawing.Size(297, 97);
             this.lsInformation.TabIndex = 0;
             this.lsInformation.UseCompatibleStateImageBehavior = false;
+            this.lsInformation.View = System.Windows.Forms.View.Details;
             // 
             // frmUpdateDelete
             // 
