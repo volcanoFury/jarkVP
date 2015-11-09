@@ -18,10 +18,13 @@ namespace WindowsFormsApplication1
         DateTime currentDate = DateTime.Today;
         String brand, model , addInfo;
 
-        public frmAddCar()
+        List<string> addDatebase = new List<string>(); 
+
+        public frmAddCar(List<string> datebase)
         {
             InitializeComponent();
             lblMultidate.Text = "" + currentDate;
+            addDatebase = datebase;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -119,6 +122,11 @@ namespace WindowsFormsApplication1
         private void btnClearInformation_Click(object sender, EventArgs e)
         {
             lsInformation.Clear();
+        }
+
+        private void frmAddCar_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

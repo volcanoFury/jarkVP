@@ -13,9 +13,12 @@ namespace WindowsFormsApplication1
 {
     public partial class frmUpdateDelete : Form
     {
-        public frmUpdateDelete()
+        List<string> upreDatebase = new List<string>(); 
+
+        public frmUpdateDelete(List<string> datebase)
         {
             InitializeComponent();
+            upreDatebase = datebase;
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -40,6 +43,11 @@ namespace WindowsFormsApplication1
         {
             frmAddCar add = new frmAddCar();
             add.Show();
+        }
+
+        private void frmUpdateDelete_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

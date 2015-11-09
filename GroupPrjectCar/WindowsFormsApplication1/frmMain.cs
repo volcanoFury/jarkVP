@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class frmMain : Form
     {
+        List<string> datebase = new List<string>();
         public frmMain()
         {
             InitializeComponent();
@@ -30,13 +31,13 @@ namespace WindowsFormsApplication1
 
         private void updateDeleteNewCarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmUpdateDelete ud = new frmUpdateDelete();
+            frmUpdateDelete ud = new frmUpdateDelete(datebase);
             ud.Show();
         }
 
         private void addNewCarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddCar add = new frmAddCar();
+            frmAddCar add = new frmAddCar(datebase);
             add.Show();
         }
     }

@@ -711,6 +711,7 @@
             this.Name = "frmAddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Manager - Add Car";
+            this.Load += new System.EventHandler(this.frmAddCar_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);

@@ -696,6 +696,7 @@
             this.Name = "frmUpdateDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Manager - Update/Remove Car";
+            this.Load += new System.EventHandler(this.frmUpdateDelete_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
