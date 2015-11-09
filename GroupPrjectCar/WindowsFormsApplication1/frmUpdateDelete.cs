@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         double price = 0, miles = 0;
         DateTime currentDate = DateTime.Today;
         String brand, model, addInfo;
-        String filename = "", filepath;
+        String filename = "", filepath ="";
 
         List<string> upreDatebase = new List<string>(); 
 
@@ -105,7 +105,18 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Miles needs to be a Number and Filled in");
             }
 
-            MessageBox.Show("" + brand + model + year + price + miles);
+            MessageBox.Show("" + brand + model + year + price + miles + (filepath += filename));
+        }
+
+        private void btnInformationAdd_Click(object sender, EventArgs e)
+        {
+            lsInformation.Items.Add(txtInfoAdd.Text);
+            txtInfoAdd.Text = "";
+        }
+
+        private void btnClearInformation_Click(object sender, EventArgs e)
+        {
+            lsInformation.Clear();
         }
     }
 }

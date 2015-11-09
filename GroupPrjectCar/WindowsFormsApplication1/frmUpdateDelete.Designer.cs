@@ -55,6 +55,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblMultidate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbAuto = new System.Windows.Forms.RadioButton();
@@ -87,7 +88,6 @@
             this.txtInfoAdd = new System.Windows.Forms.TextBox();
             this.btnInformationAdd = new System.Windows.Forms.Button();
             this.lsInformation = new System.Windows.Forms.ListView();
-            this.lblMultidate = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -329,6 +329,16 @@
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Edit";
+            // 
+            // lblMultidate
+            // 
+            this.lblMultidate.AutoSize = true;
+            this.lblMultidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMultidate.Location = new System.Drawing.Point(6, 18);
+            this.lblMultidate.Name = "lblMultidate";
+            this.lblMultidate.Size = new System.Drawing.Size(91, 13);
+            this.lblMultidate.TabIndex = 33;
+            this.lblMultidate.Text = "this is date Saved";
             // 
             // label2
             // 
@@ -635,6 +645,7 @@
             this.btnClearInformation.TabIndex = 23;
             this.btnClearInformation.Text = "Clear Information";
             this.btnClearInformation.UseVisualStyleBackColor = false;
+            this.btnClearInformation.Click += new System.EventHandler(this.btnClearInformation_Click);
             // 
             // txtInfoAdd
             // 
@@ -655,6 +666,7 @@
             this.btnInformationAdd.TabIndex = 22;
             this.btnInformationAdd.Text = "Add Information";
             this.btnInformationAdd.UseVisualStyleBackColor = false;
+            this.btnInformationAdd.Click += new System.EventHandler(this.btnInformationAdd_Click);
             // 
             // lsInformation
             // 
@@ -663,16 +675,6 @@
             this.lsInformation.Size = new System.Drawing.Size(297, 97);
             this.lsInformation.TabIndex = 0;
             this.lsInformation.UseCompatibleStateImageBehavior = false;
-            // 
-            // lblMultidate
-            // 
-            this.lblMultidate.AutoSize = true;
-            this.lblMultidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMultidate.Location = new System.Drawing.Point(6, 18);
-            this.lblMultidate.Name = "lblMultidate";
-            this.lblMultidate.Size = new System.Drawing.Size(91, 13);
-            this.lblMultidate.TabIndex = 33;
-            this.lblMultidate.Text = "this is date Saved";
             // 
             // frmUpdateDelete
             // 
