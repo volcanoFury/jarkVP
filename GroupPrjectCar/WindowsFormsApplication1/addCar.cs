@@ -16,12 +16,22 @@ namespace WindowsFormsApplication1
         int year = 0;
         double price = 0, miles = 0;
         DateTime currentDate = DateTime.Today;
+<<<<<<< HEAD
         String brand, model;
+=======
+        String brand, model , addInfo;
+>>>>>>> origin/master
 
-        public frmAddCar()
+        List<string> addDatebase = new List<string>(); 
+
+        public frmAddCar(List<string> datebase)
         {
             InitializeComponent();
             lblMultidate.Text = "" + currentDate;
+<<<<<<< HEAD
+=======
+            addDatebase = datebase;
+>>>>>>> origin/master
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -99,5 +109,32 @@ namespace WindowsFormsApplication1
             frmUpdateDelete ud = new frmUpdateDelete();
             ud.Show();
         }
+
+        private void btnInformationAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                addInfo = txtInfoAdd.Text;
+            }
+            catch (FormatException fe)
+            {
+                MessageBox.Show("Aditional needs and Filled in" + "\n");
+            }
+
+            lsInformation.Items.Add(addInfo);
+
+            txtInfoAdd.Clear();
+        }
+
+        private void btnClearInformation_Click(object sender, EventArgs e)
+        {
+            lsInformation.Clear();
+        }
+
+        private void frmAddCar_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

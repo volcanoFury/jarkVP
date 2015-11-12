@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblMultidate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -88,7 +89,10 @@
             this.abouToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carImage = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+<<<<<<< HEAD
             this.lblMultidate = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -110,6 +114,16 @@
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Edit";
+            // 
+            // lblMultidate
+            // 
+            this.lblMultidate.AutoSize = true;
+            this.lblMultidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMultidate.Location = new System.Drawing.Point(115, 18);
+            this.lblMultidate.Name = "lblMultidate";
+            this.lblMultidate.Size = new System.Drawing.Size(91, 13);
+            this.lblMultidate.TabIndex = 3;
+            this.lblMultidate.Text = "this is date Saved";
             // 
             // label2
             // 
@@ -157,6 +171,10 @@
             this.btnClearInformation.TabIndex = 23;
             this.btnClearInformation.Text = "Clear Information";
             this.btnClearInformation.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.btnClearInformation.Click += new System.EventHandler(this.btnClearInformation_Click);
+>>>>>>> origin/master
             // 
             // txtInfoAdd
             // 
@@ -177,6 +195,10 @@
             this.btnInformationAdd.TabIndex = 22;
             this.btnInformationAdd.Text = "Add Information";
             this.btnInformationAdd.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.btnInformationAdd.Click += new System.EventHandler(this.btnInformationAdd_Click);
+>>>>>>> origin/master
             // 
             // lsInformation
             // 
@@ -185,6 +207,10 @@
             this.lsInformation.Size = new System.Drawing.Size(297, 97);
             this.lsInformation.TabIndex = 0;
             this.lsInformation.UseCompatibleStateImageBehavior = false;
+<<<<<<< HEAD
+=======
+            this.lsInformation.View = System.Windows.Forms.View.List;
+>>>>>>> origin/master
             // 
             // groupBox3
             // 
@@ -676,6 +702,7 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+<<<<<<< HEAD
             // lblMultidate
             // 
             this.lblMultidate.AutoSize = true;
@@ -686,6 +713,8 @@
             this.lblMultidate.TabIndex = 3;
             this.lblMultidate.Text = "this is date Saved";
             // 
+=======
+>>>>>>> origin/master
             // frmAddCar
             // 
             this.AcceptButton = this.btnSave;
@@ -708,6 +737,7 @@
             this.Name = "frmAddCar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Manager - Add Car";
+            this.Load += new System.EventHandler(this.frmAddCar_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);

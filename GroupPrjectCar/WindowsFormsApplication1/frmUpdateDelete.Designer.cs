@@ -55,8 +55,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblMultidate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbAuto = new System.Windows.Forms.RadioButton();
             this.rbManual = new System.Windows.Forms.RadioButton();
@@ -69,8 +69,8 @@
             this.rdHatchBack = new System.Windows.Forms.RadioButton();
             this.rdSaloon = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMiles = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             this.txtBrand = new System.Windows.Forms.TextBox();
             this.Brand = new System.Windows.Forms.Label();
             this.carImage = new System.Windows.Forms.PictureBox();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -320,8 +320,8 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.lblMultidate);
             this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(255, 383);
             this.groupBox5.Name = "groupBox5";
@@ -329,6 +329,16 @@
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Edit";
+            // 
+            // lblMultidate
+            // 
+            this.lblMultidate.AutoSize = true;
+            this.lblMultidate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMultidate.Location = new System.Drawing.Point(6, 18);
+            this.lblMultidate.Name = "lblMultidate";
+            this.lblMultidate.Size = new System.Drawing.Size(91, 13);
+            this.lblMultidate.TabIndex = 33;
+            this.lblMultidate.Text = "this is date Saved";
             // 
             // label2
             // 
@@ -339,16 +349,6 @@
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "this is date edited";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "this is date Saved";
             // 
             // groupBox3
             // 
@@ -480,8 +480,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtMiles);
+            this.groupBox1.Controls.Add(this.txtPrice);
             this.groupBox1.Controls.Add(this.txtYear);
             this.groupBox1.Controls.Add(this.txtModel);
             this.groupBox1.Controls.Add(this.label6);
@@ -498,19 +498,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Characreristics";
             // 
-            // textBox2
+            // txtMiles
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 9;
+            this.txtMiles.Location = new System.Drawing.Point(86, 106);
+            this.txtMiles.Name = "txtMiles";
+            this.txtMiles.Size = new System.Drawing.Size(100, 22);
+            this.txtMiles.TabIndex = 9;
             // 
-            // textBox1
+            // txtPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtPrice.Location = new System.Drawing.Point(222, 76);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(75, 22);
+            this.txtPrice.TabIndex = 8;
             // 
             // txtYear
             // 
@@ -588,18 +588,18 @@
             this.carImage.TabIndex = 21;
             this.carImage.TabStop = false;
             // 
-            // btnClear
+            // btnDelete
             // 
-            this.btnClear.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(297, 485);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(129, 23);
-            this.btnClear.TabIndex = 31;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(297, 485);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(129, 23);
+            this.btnDelete.TabIndex = 31;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -613,6 +613,7 @@
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // openFileDialog1
             // 
@@ -644,6 +645,7 @@
             this.btnClearInformation.TabIndex = 23;
             this.btnClearInformation.Text = "Clear Information";
             this.btnClearInformation.UseVisualStyleBackColor = false;
+            this.btnClearInformation.Click += new System.EventHandler(this.btnClearInformation_Click);
             // 
             // txtInfoAdd
             // 
@@ -664,6 +666,7 @@
             this.btnInformationAdd.TabIndex = 22;
             this.btnInformationAdd.Text = "Add Information";
             this.btnInformationAdd.UseVisualStyleBackColor = false;
+            this.btnInformationAdd.Click += new System.EventHandler(this.btnInformationAdd_Click);
             // 
             // lsInformation
             // 
@@ -681,7 +684,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(578, 514);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.button4);
@@ -696,6 +699,7 @@
             this.Name = "frmUpdateDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Car Manager - Update/Remove Car";
+            this.Load += new System.EventHandler(this.frmUpdateDelete_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -744,7 +748,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton rbAuto;
         private System.Windows.Forms.RadioButton rbManual;
@@ -757,8 +760,8 @@
         private System.Windows.Forms.RadioButton rdHatchBack;
         private System.Windows.Forms.RadioButton rdSaloon;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMiles;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label6;
@@ -768,7 +771,7 @@
         private System.Windows.Forms.TextBox txtBrand;
         private System.Windows.Forms.Label Brand;
         private System.Windows.Forms.PictureBox carImage;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -776,5 +779,6 @@
         private System.Windows.Forms.TextBox txtInfoAdd;
         private System.Windows.Forms.Button btnInformationAdd;
         private System.Windows.Forms.ListView lsInformation;
+        private System.Windows.Forms.Label lblMultidate;
     }
 }

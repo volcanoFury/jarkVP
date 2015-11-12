@@ -39,6 +39,7 @@ E:\Magee\Visual Programming\Group Project\jarkVP-master\GroupPrjectCar\WindowsFo
 C:\Users\andrew\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmAddCar.resources
 C:\Users\andrew\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmHelp.resources
 C:\Users\andrew\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmUpdateDelete.resources
+<<<<<<< HEAD
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
@@ -51,3 +52,6 @@ C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\o
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmUpdateDelete.resources
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Tanya\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\GroupProjectCar.csproj.GenerateResource.Cache
+=======
+D:\Users\Jake Bloor\Documents\GitHub\jarkVP\GroupPrjectCar\WindowsFormsApplication1\obj\Debug\GroupProjectCar.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master
